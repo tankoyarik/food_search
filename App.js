@@ -2,10 +2,12 @@ import React from "react";
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import SearchScreen from "./src/screens/SearchScreen";
+import ResultsShowScreen from "./src/screens/ResultsShowScreen";
 
 const navigator = createStackNavigator(
   {
-    Search: SearchScreen
+    Search: SearchScreen,
+    ResultScreen: ResultsShowScreen
   },
   {
     initialRouteName: "Search",
@@ -15,4 +17,4 @@ const navigator = createStackNavigator(
   }
 );
 
-export default createAppContainer(navigator)
+export default createAppContainer(navigator);
